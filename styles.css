@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  font-family: 'Cascadia Code', monospace; 
+  background:#1a1a24;
+}
+
+/* Header Tool Bar*/
+header {
+  color: #ababab;
+  display: flex;
+  padding: 4px;
+  border: 5px white;
+}
+
+header > * {
+  padding: 2px 8px 2px 8px;
+  user-select: none;
+}
+
+header > *:hover {
+  background-color: #262a33;
+  color: #fff;
+}
+
+/* Main Config */
+main {
+  background-color: #ffab01;
+}
+
+/* Footer Tool Bar */
+footer {
+  display: flex;
+  background-color: #262a33;
+  width: 100%;
+  height: 25px;
+  bottom: 0;
+  gap: 5px;
+  left: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer > * {
+  display: flex;
+  background-color: #262a33;
+  padding: 2px 8px 2px 8px;
+  user-select: none;
+  gap: 15px;
+  align-items: center;
+}
+
+.file_info {
+  margin-left: 25px;
+}
+
+.info {
+  font-size: 0.75rem;
+}
+
+.info > * {
+  color: #fff;
+  background-color: #262a33;
+}
+
+#status {
+  font-size: 0.8rem;
+  color: #ab5501;
+  background-color: #262a33;
+}
+
+#project_name {
+  background-color: #262a33;
+  border-style: none;
+  color: #ffab01;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout adaptable</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      flex-shrink: 0; /* No se reduce */
+    }
+
+    main {
+      flex-grow: 1; /* Ocupa todo el espacio restante */
+      background-color: #f0f0f0;
+      padding: 20px;
+      overflow: auto; /* Permite scroll si el contenido es más grande */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Encabezado fijo arriba
+  </header>
+
+  <main>
+    Lorem ipsum dolor <br>
+    sit amet consectetur <br>
+    adipiscing elit cursus <br>
+    sollicitudin tortor, <br>
+    vel id gravida porta <br>
+    nulla habitasse orci <br>
+    platea pulvinar. <br>
+    Et quam class magna <br>
+    montes vitae egestas <br>
+    enim ut, torquent mollis <br>
+    eros pharetra tellus id <br>
+    laoreet molestie, consequat <br>
+    inceptos metus rutrum potenti <br>
+    litora mattis. <br>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/RGB_6bits_palette_sample_image.png" alt="" height="500px">
+
+    Lorem ipsum dolor <br>
+    sit amet consectetur <br>
+    adipiscing elit cursus <br>
+    sollicitudin tortor, <br>
+    vel id gravida porta <br>
+    nulla habitasse orci <br>
+    platea pulvinar. <br>
+    Et quam class magna <br>
+    montes vitae egestas <br>
+    enim ut, torquent mollis <br>
+    eros pharetra tellus id <br>
+    laoreet molestie, consequat <br>
+    inceptos metus rutrum potenti <br>
+    litora mattis. <br>
+  </main>
+
+  <footer>
+    Pie de página fijo abajo
+  </footer>
+
+</body>
+</html>
